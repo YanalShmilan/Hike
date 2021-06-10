@@ -14,6 +14,10 @@ function App() {
         <Route path="/details/:tripSlug">
           <TripDetail trips={data} />
         </Route>
+        <Route path="/trips/">
+          <Home />
+          <Trips data={data} />
+        </Route>
         <Route path="/fourOfour">
           <FourOfour />
         </Route>

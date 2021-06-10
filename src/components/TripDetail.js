@@ -21,6 +21,7 @@ const TripDetail = (props) => {
       <p>{trip.details}</p>
       <p>{trip.length1}</p>
       <p>{trip.difficulty}</p>
+      <p>{trip.rating}</p>
 
       <h1>recommended Trips</h1>
       {recommended}

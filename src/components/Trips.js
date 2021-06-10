@@ -2,12 +2,14 @@ import { useState } from 'react';
 import TripCard from './TripCard';
 import Select from 'react-select';
 import Switch from 'react-switch';
+import { useHistory } from 'react-router-dom';
 
 const Trips = (props) => {
   let [query, setQuery] = useState('');
   let [diff, setDiff] = useState('');
   let [length1, setLength1] = useState('20');
   let [kmOrMile, setkmOrMile] = useState('km');
+  const history = useHistory();
 
   const diffOp = [
     { value: undefined, label: 'None' },
@@ -34,12 +36,20 @@ const Trips = (props) => {
 
   if (diff) {
     trips = trips.filter((trip) => trip.difficulty == diff);
+    history.push({
+      pathname: '/trips/',
+      search: diff,
+    });
   }
   if (length1) {
-    trips = trips.filter((trip) => trip.length1 == length1);
+    trips = trips.filter((trip) => trip.length1 <= length1);
   }
   trips = trips
-    .filter((trip) => trip.name.toLowerCase().includes(query))
+    .filter(
+      (trip) =>
+        trip.name.toLowerCase().includes(query) ||
+        trip.city.toLowerCase().includes(query)
+    )
     .map((trip) => {
       return (
         <div>
