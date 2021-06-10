@@ -3,12 +3,21 @@ import './App.css';
 import data from './data';
 import Trips from './components/Trips';
 import Home from './components/Home';
+import TripDetail from './components/TripDetail';
+import { Route, Switch, Link, NavLink } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Trips data={data} />
+      <Switch>
+        <Route path="/details/:tripSlug">
+          <TripDetail trips={data} />
+        </Route>
+        <Route exact path="/">
+          <Home />
+          <Trips data={data} />
+        </Route>
+      </Switch>
     </div>
   );
 }
