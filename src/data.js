@@ -3,7 +3,7 @@ const data = [
     id: '1',
     name: 'Petra Hike',
     slug: 'petra-hike',
-    length1: '15',
+    length1: '10',
     difficulty: 'easy',
     details: 'jfhdbdtfgmhpdfgdnh;budfbd,;boghdng',
     img: 'https://lp-cms-production.imgix.net/2019-06/2bf1faac5c1e26d5cb94128cf762517a-petra.jpg',
@@ -12,7 +12,7 @@ const data = [
     id: '2',
 
     name: 'Wadi-rum Hike',
-    slug: 'Wadi-rum-hike',
+    slug: 'wadi-rum-hike',
     length1: '20',
     difficulty: 'moderate',
     details: 'jfhdbdtfgmhpdfgdnh;budfbd,;boghdng',
