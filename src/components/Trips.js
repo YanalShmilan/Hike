@@ -1,16 +1,29 @@
-const Trips = (props) => {
-  let trips = props.data.map((trip) => {
-    return (
-      <div>
-        <h1>{trip.name}</h1>
-        <img src={trip.img} />
-        <p>{trip.difficulty}</p>
-        <p>{trip.length1}</p>
-        <p>{trip.details}</p>
-      </div>
-    );
-  });
+import { useState } from 'react';
+import TripCard from './TripCard';
 
-  return <div>{trips}</div>;
+const Trips = (props) => {
+  let [query, setQuery] = useState('');
+
+  let trips = props.data
+    .filter((trip) => trip.name.toLowerCase().includes(query))
+    .map((trip) => {
+      return (
+        <div>
+          <TripCard trip={trip} />
+        </div>
+      );
+    });
+
+  return (
+    <div>
+      <input
+        placeholder="search"
+        onChange={(event) => {
+          setQuery(event.target.value.toLowerCase());
+        }}
+      ></input>
+      {trips}
+    </div>
+  );
 };
 export default Trips;
