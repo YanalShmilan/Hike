@@ -1,38 +1,94 @@
 .App {
+  font-family: Ink Free;
+  box-shadow: 0 0 20px #bbbbbb;
+  padding: 10px;
+  background: linear-gradient(to top, rgb(178, 184, 131) 50%, white, 50%);
+  background-size: 100% 200%;
+  background-color: all 0.5s ease;
   text-align: center;
+  /* background-color: #e6d8c1; */
+  color: #6e7646;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #eadecc;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.conent {
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: -40px;
+  margin-bottom: -150px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.swi {
+  margin-right: 30px;
+  font-family: Ink Free;
+  font-size: 16px;
+  width: 10%;
+  /* padding: 10px; */
+  /* padding-right: 10px; */
+}
+.tool {
+  width: 10%;
+  padding: 20px;
+  padding-right: 10px;
+}
+.sear {
+  margin-left: 50px;
+  /* background-color: #e6d8c1;
+  color: #323522;
+  border: 1px solid #5c623b;
+  box-shadow: 0 0 20px #bbbbbb;
+  padding: 10px; */
+}
+.ch {
+  padding-left: 20px;
+  background-color: #e6d8c1;
+  color: #323522;
+  border: 1px solid #5c623b;
+  box-shadow: 0 0 20px #bbbbbb;
+  border-radius: 10.5%;
+  padding: 10px;
+  margin-left: 25%;
+  width: 100%;
+}
+.selc {
+  margin-top: 20px;
+  margin-left: 30%;
+  width: 40%;
+  border-radius: 10%;
+}
+.det {
+  font-family: Ink Free;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  border: 1px solid #5c623b;
+  margin: 10%;
+  box-shadow: 0 0 20px #808952;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(to top, rgb(178, 184, 131) 50%, white, 50%);
+  background-size: 100% 200%;
+  background-color: all 0.5s ease;
 }
-
-.App-link {
-  color: #61dafb;
+.det:hover {
+  opacity: 0.9;
+  background-position: #5c623b;
+  color: #5c623b;
+  border: none;
+  box-shadow: 0 0 20px #707070;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-det {
+  border-radius: 20%;
+  box-shadow: 0 0 20px #707070;
+  width: 70%;
+}
+.reco {
+  margin-right: 25%;
 }
