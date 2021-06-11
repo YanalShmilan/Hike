@@ -26,7 +26,7 @@ body {
   margin-right: 30px;
   font-family: Ink Free;
   font-size: 16px;
-  width: 10%;
+  width: 20%;
   /* padding: 10px; */
   /* padding-right: 10px; */
 }
@@ -45,7 +45,7 @@ body {
 }
 .ch {
   padding-left: 20px;
-  background-color: #e6d8c1;
+  background-color: #eadecc;
   color: #323522;
   border: 1px solid #5c623b;
   box-shadow: 0 0 20px #bbbbbb;
@@ -91,4 +91,9 @@ body {
 }
 .reco {
   margin-right: 25%;
+}
+.dif {
+  padding-top: 40%;
+  margin-right: 40%;
+  margin-bottom: 10%;
 }

@@ -61,6 +61,7 @@ const Trips = (props) => {
 
   return (
     <div>
+      <samp className="dif">Difficulty</samp>
       <Select
         className="selc"
         options={diffOp}
@@ -79,6 +80,7 @@ const Trips = (props) => {
         </div>
         <div className="tool">
           <Tooltip>
+            {length1}
             <input
               type="range"
               min="10"

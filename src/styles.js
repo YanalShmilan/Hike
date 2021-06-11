@@ -50,6 +50,7 @@ export const List = styled.div`
     font-size: 15px;
   }
   img {
+    padding-bottom: 10px;
     min-width: 200px;
     max-width: none;
     height: 200px;
